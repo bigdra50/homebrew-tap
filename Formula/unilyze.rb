@@ -1,24 +1,25 @@
-# Pushed by the unilyze release workflow (Update Homebrew tap step).
-# Do not edit by hand; changes are overwritten on the next release.
+# Release automation renders the placeholders below, attaches the rendered
+# formula to each GitHub Release, and pushes it to
+# bigdra50/homebrew-tap (Formula/unilyze.rb) when HOMEBREW_TAP_TOKEN is set.
 class Unilyze < Formula
   desc "Static analyzer for Unity and general C# projects"
   homepage "https://github.com/bigdra50/unilyze"
-  version "0.4.1"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bigdra50/unilyze/releases/download/v0.4.1/unilyze-0.4.1-osx-arm64.tar.gz"
-      sha256 "cfd906c8c984eb4f9317420f22384e66cf72bc77a2b00be5aea7dcf37ca3b38c"
+      url "https://github.com/bigdra50/unilyze/releases/download/v0.5.1/unilyze-0.5.1-osx-arm64.tar.gz"
+      sha256 "097ca4fe0830a18514998063e6dcd57519769c3f5c9b85fd3f7e8f6f240ee19c"
     else
-      url "https://github.com/bigdra50/unilyze/releases/download/v0.4.1/unilyze-0.4.1-osx-x64.tar.gz"
-      sha256 "44bf8ac159630af5e0c3de550267fbc3697fecb2ea7f06b0aedf155ff7631df6"
+      url "https://github.com/bigdra50/unilyze/releases/download/v0.5.1/unilyze-0.5.1-osx-x64.tar.gz"
+      sha256 "71cba56b7d271573ae5eb048c17f6fdb1ad4e3b3be658d1f919be16097a3e409"
     end
   end
 
   on_linux do
-    url "https://github.com/bigdra50/unilyze/releases/download/v0.4.1/unilyze-0.4.1-linux-x64.tar.gz"
-    sha256 "25b4caa9de94c9803b270df8c7fe9f48c234def79a046dda31b7b4ae52a09bdd"
+    url "https://github.com/bigdra50/unilyze/releases/download/v0.5.1/unilyze-0.5.1-linux-x64.tar.gz"
+    sha256 "e9b9bbcf3f6dd6710034be011ef7f7efe01a88c8ad912092f6d4a54e9fa6b1b9"
   end
 
   def install
