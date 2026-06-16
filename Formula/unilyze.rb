@@ -4,22 +4,22 @@
 class Unilyze < Formula
   desc "Static analyzer for Unity and general C# projects"
   homepage "https://github.com/bigdra50/unilyze"
-  version "0.5.2"
+  version "0.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bigdra50/unilyze/releases/download/v0.5.2/unilyze-0.5.2-osx-arm64.tar.gz"
-      sha256 "c80f6c137cc333d09f18d76f604af6061fdec0099a548d68aab6c2009d478853"
+      url "https://github.com/bigdra50/unilyze/releases/download/v0.5.3/unilyze-0.5.3-osx-arm64.tar.gz"
+      sha256 "a87b39939aaa230f2afb811ac252915d4f4a16525ba31fb42ea94747b1849131"
     else
-      url "https://github.com/bigdra50/unilyze/releases/download/v0.5.2/unilyze-0.5.2-osx-x64.tar.gz"
-      sha256 "5ba6376299151c6df96690b0b2f15811aab5268cf9807329c798268b742439a8"
+      url "https://github.com/bigdra50/unilyze/releases/download/v0.5.3/unilyze-0.5.3-osx-x64.tar.gz"
+      sha256 "a8d54c97d883daa0fd888d182601d2bffa54931e79472d2c785518661d1e9a29"
     end
   end
 
   on_linux do
-    url "https://github.com/bigdra50/unilyze/releases/download/v0.5.2/unilyze-0.5.2-linux-x64.tar.gz"
-    sha256 "4a2ea0502eb5650517e68ab30b273fc6dbf1d98263eb2bfe27a679ff842e00de"
+    url "https://github.com/bigdra50/unilyze/releases/download/v0.5.3/unilyze-0.5.3-linux-x64.tar.gz"
+    sha256 "7038e82b58354764fc28495021db66004674455b8d9db85872389aeb9c3cede1"
   end
 
   def install
