@@ -7,7 +7,7 @@ cask "otolog" do
   desc "Menu bar app that transcribes Mac system audio in real time"
   homepage "https://github.com/bigdra50/OtoLog"
 
-  depends_on macos: ">= :tahoe" # macOS 26+ (SpeechAnalyzer)
+  depends_on macos: :tahoe # macOS 26+ (SpeechAnalyzer)
 
   app "OtoLog.app"
 
