@@ -1,6 +1,6 @@
 cask "otolog" do
-  version "0.3.0"
-  sha256 "1853457f6f98a38c2d3560ce346243caf7de7b36bc6ee9baefc8af5becc0064e"
+  version "0.3.1"
+  sha256 "4aae27d72eaa179045ed775ff1583bab2a1538cf19217a721d0066a1c7c2f51b"
 
   url "https://github.com/bigdra50/OtoLog/releases/download/v#{version}/OtoLog.zip"
   name "OtoLog"
